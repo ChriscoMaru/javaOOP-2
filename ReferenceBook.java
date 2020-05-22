@@ -1,4 +1,4 @@
-public class ReferenceBook extends Book{
+public class ReferenceBook extends Book implements Loanable{
 
     private String subject;
     
@@ -11,5 +11,23 @@ public class ReferenceBook extends Book{
     }
     public void setSubject(String subject){
         this.subject = subject;
+    }
+
+    @Override
+    public boolean isLoanable() {
+        // TODO Auto-generated method stub
+        return false;
+    }
+
+    @Override
+    public double loanFee() {
+        // TODO Auto-generated method stub
+        return 0;
+    }
+
+    @Override
+    public Schedule feeSchedule() {
+        // TODO Auto-generated method stub
+        return null;
     }
 }

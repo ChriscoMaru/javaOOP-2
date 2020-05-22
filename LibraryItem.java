@@ -1,9 +1,10 @@
 public class LibraryItem {
 
-    private String title, author;
+    private String title; 
+    private Authors author;
     private int cost;
 
-    public LibraryItem(String titles, String authors, int cost) {
+    public LibraryItem(String titles, Authors authors, int cost) {
         this.title = titles;
         this.author = authors;
         this.cost = cost;
@@ -15,7 +16,7 @@ public class LibraryItem {
         return title;
     }
 
-    public String getAuthors() {
+    public Authors getAuthors() {
         return author;
     }
 
